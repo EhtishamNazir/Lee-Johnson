@@ -1,0 +1,778 @@
+/* -----------------
+global settings 
+------------------*/
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('../fonts/Inter-Regular.woff') format('woff');
+    }
+    
+
+@font-face {
+	font-family: 'Inter Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Italic'), url('../fonts/Inter-Italic.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Thin BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Thin BETA'), url('../fonts/Inter-Thin-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Thin Italic BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Thin Italic BETA'), url('../fonts/Inter-ThinItalic-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Extra Light BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Extra Light BETA'), url('../fonts/Inter-ExtraLight-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Extra Light Italic BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Extra Light Italic BETA'), url('../fonts/Inter-ExtraLightItalic-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Light BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Light BETA'), url('../fonts/Inter-Light-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Light Italic BETA';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Light Italic BETA'), url('../fonts/Inter-LightItalic-BETA.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Medium'), url('../fonts/Inter-Medium.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Medium Italic'), url('../fonts/Inter-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Semi Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Semi Bold'), url('../fonts/Inter-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Semi Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Semi Bold Italic'), url('../fonts/Inter-SemiBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Bold'), url('../fonts/Inter-Bold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Bold Italic'), url('../fonts/Inter-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Extra Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Extra Bold'), url('../fonts/Inter-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Extra Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Extra Bold Italic'), url('../fonts/Inter-ExtraBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Black';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Black'), url('../fonts/Inter-Black.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Inter Black Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Inter Black Italic'), url('../fonts/Inter-BlackItalic.woff') format('woff');
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+::before,
+::after{
+	box-sizing: border-box;
+}
+body{
+	font-family:'Inter Regular';
+	font-weight:normal;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+h1{
+	font-weight: 700;
+}
+h2{
+	font-weight: 600;
+}
+h3,
+h4,
+h5,
+h6{
+	font-weight: 500;
+}
+p{
+	font-size: 16px;
+}
+.container{
+	width: 85%;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* -----------------
+header 
+------------------*/
+.header{
+	width: 100%;
+	padding-top: 30px;
+}
+.header .logo img{
+	width: 70px;
+}
+
+/* -----------------
+home section 
+------------------*/
+.home-section{
+	position: relative;
+	width: 100%;
+	height: 680px;
+	background-image: url('../img/graphic1.svg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
+}
+.home-section .about{
+	width: 35%;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.home-section .about .name{
+	width: 100%;
+	text-align: left;
+}
+.home-section .about .name p{
+	font-family: 'Inter Bold';
+	font-size: 54px;
+}
+.home-section .about .designation{
+	width: 100%;
+	text-align: left;
+}
+.home-section .about .designation p{
+	font-family: 'Inter Bold';
+	font-size: 30px;
+	margin-top: -5px;
+}
+.home-section .about .description{
+	width: 100%;
+	text-align: left;
+}
+.home-section .about .description p{
+	font-family: 'Inter Regular';
+	font-size: 20px;
+	margin-top: 50px;
+	line-height: 30px;
+}
+.home-section .hireme{
+	width: 30%;
+	position: absolute;
+	bottom: 20px;
+}
+.home-section .hireme .hireme-heading p{
+	font-family: 'Inter Bold';
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.home-section .hireme .hireme-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.home-section .hireme .hireme-items .hireme-item{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home-section .hireme .hireme-items .hireme-item a{
+	font-family: 'Inter Bold';
+	font-size: 18px;
+	margin-left: 5px;
+	color: #000000;
+}
+
+/* --------------
+experience
+---------------*/
+.experience{
+	width: 100%;
+	padding: 50px 0;
+	background-color: #6562CF;
+	border-top: 5px solid #FFB510;
+}
+.experience .experience-heading p{
+	font-family: 'Inter Bold';
+	font-size: 34px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+.experience .experience-items{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.experience .experience-items .experience-item{
+	width: 48%;
+	margin-bottom: 20px;
+}
+.experience .experience-items .experience-item p{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 18px;
+	line-height: 26px;
+}
+
+
+/* --------------
+people and teams
+---------------*/
+.teams{
+	width: 100%;
+	/*padding: 50px 0;*/
+	background-image: url('../img/graphic2.svg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 40% 100%;
+	height: 480px;
+	margin-top: 50px;
+}
+.teams .teams-heading p{
+	font-family: 'Inter Bold';
+	font-size: 34px;
+	color: #3F4D79;
+	margin-bottom: 30px;
+}
+.teams .teams-description p{
+	width: 65%;
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 40px;
+	line-height: 26px;
+}
+.teams .teams-list-items{
+	width: 55%;
+	margin-left: 20px;
+}
+.teams .teams-list-items .teams-list-item{
+	width: 100%;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	margin-bottom: 30px;
+}
+.teams .teams-list-items .teams-list-item img{
+	margin-right: 15px;
+	width: 15px;
+	height: 15px;
+}
+.teams .teams-list-items .teams-list-item p{
+	font-size: 18px;
+	color: #000000;
+	line-height: 26px;
+}
+.teams-img-sm{
+	display: none;
+}
+.teams-img-sm img{
+	display: block;
+	width: 80%;
+	margin: 20px auto 30px auto;
+}
+/* --------------------
+software and platform
+---------------------*/
+.software{
+	background-image: none;
+	background-image: url('../img/graphic4.svg');
+	background-size: 50% 100%;
+}
+.software .teams-description p{
+	width: 64%;
+}
+.software .teams-list-items{
+	width: 54%;
+}
+
+/* ----------------------------
+architecture and infrastructure
+-----------------------------*/
+.architecture{
+	background-image: none;
+	position: relative;
+	height: 620px;
+	background-color: #FAFAFA;
+	padding: 50px 0 0 0;
+	margin-top: 0px;
+}
+.teams.architecture .teams-description p{
+	width: 100%;
+}
+.architecture .bg-img{
+	position: absolute;
+	top: 230px;
+	left: 0;
+	width: 55%;
+}
+.architecture .bg-img img{
+	width: 100%;
+}
+.architecture .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.architecture .container .head-desc{
+	width: 52%;
+}
+.architecture .container .items{
+	width: 48%;
+	padding-top: 110px;
+}
+.architecture .container .items .teams-list-items{
+	width: 100%;
+	margin-left: 0;
+}
+.architecture .container .items .teams-list-items-2{
+	width: 100%;
+	margin-top: 50px;
+	margin-left: 70px;
+}
+.architecture .container .items .teams-list-items-2 .teams-list-item{
+	margin-bottom: 10px;
+}
+.architecture .container .items .teams-list-items-2 .teams-list-item{
+	font-size: 18px;
+	color: #000000;
+}
+.architecture .container .items .teams-list-items-2 .teams-list-item img{
+	margin-right: 10px;
+	width: 10px;
+}
+
+/* --------------
+processes
+---------------*/
+.processes{
+	height: 700px;
+}
+.processes .bg-img{
+	width: 50%;
+	top: 200px;
+}
+/* --------------
+footer
+---------------*/
+.footer{
+	width: 100%;
+	padding: 20px 0;
+	background-color: #3F4D79;
+}
+.footer .row{
+	justify-content: space-between;
+}
+.footer .hireme{
+	width: 40%;
+}
+.footer .hireme .hireme-heading p{
+	font-family: 'Inter Bold';
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+.footer .hireme .hireme-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer .hireme .hireme-items .hireme-item{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.footer .hireme .hireme-items .hireme-item a{
+	font-family: 'Inter Bold';
+	font-size: 18px;
+	margin-left: 5px;
+	color: #ffffff;
+}
+.footer .copyright{
+	width: 44%;
+}
+.footer .copyright p{
+	margin-top: 50px;
+	font-family: 'Inter Regular';
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	text-align: right;
+}
+.footer .copyright p a{
+	font-family: 'Inter Bold';
+	color: #ffffff;
+}
+
+/* --------------
+responsive
+---------------*/
+@media(max-width: 767px){
+	.container{
+		width: 90%;
+	}
+	.header .logo img{
+		width: 50px;
+	}
+
+	.home-section{
+		height: auto;
+		padding: 30px 0 0 0;
+		background-image: none;
+	}
+	.home-section .about{
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	.home-section .about .name p{
+		font-size: 44px;
+	}
+	.home-section .about .designation p{
+		font-size: 24px;
+	}
+	.home-section .about .description p{
+		margin-top: 30px;
+	}
+	.home-section .hireme{
+		position: static;
+		width: 100%;
+		margin-top: 40px;
+	}
+	.home-section .hireme .hireme-heading p{
+		text-align: left;
+		font-size: 24px;
+	}
+	.home-section .hireme .hireme-items .hireme-item{
+		margin-bottom: 10px;
+	}
+	.home-section .hireme .hireme-items .hireme-item img{
+		width: 25px;
+	}
+
+	.experience .experience-heading p{
+		font-size: 24px;
+	}
+	.experience .experience-items .experience-item{
+		width: 100%;
+	}
+	.experience .experience-items .experience-item p{
+		font-size: 16px;
+	}
+
+	.teams{
+		height: auto;
+		padding-bottom: 20px;
+		background-image: none;
+	}
+	.teams .teams-heading p{
+		font-size: 24px;
+	}
+	.teams .teams-description p{
+		font-size: 16px;
+		width: 100%;
+	}
+	.teams-img-sm{
+		display: block;
+	}
+	.teams .teams-list-items{
+		width: 100%;
+		margin-left: 0;
+	}
+	.teams .teams-list-items .teams-list-item p{
+		font-size: 16px;
+	}
+
+	.architecture .bg-img{
+		display: none;
+	}
+	.architecture .container .head-desc{
+		width: 100%;
+	}
+	.architecture .container .items{
+		width: 100%;
+		padding-top: 0;
+	}
+	.architecture .container .items .teams-list-items-2{
+		margin-left: 20px;
+	}
+	.architecture .container .items .teams-list-items-2 .teams-list-item{
+		word-break: break-all;
+		margin-right: 15px;
+	}
+
+	.footer .hireme{
+		width: 100%;
+	}
+	.footer .hireme .hireme-heading p{
+		font-size: 24px;
+	}
+	.footer .hireme .hireme-items{
+		justify-content: center;
+	}
+	.footer .hireme .hireme-items .hireme-item a{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.footer .copyright{
+		width: 100%;
+	}
+	.footer .copyright p{
+		text-align: left;
+		font-size: 16px;
+		margin-top: 20px;
+	}
+}
+@media(min-width: 768px) and (max-width:  1023px){
+	.container{
+		width: 95%;
+	}
+	.home-section{
+		height: 420px;
+	}
+	.home-section .about{
+		display: block;
+		height: auto;
+		margin-top: 30px;
+	}
+	.home-section .about .name p{
+		font-size: 34px;
+	}
+	.home-section .about .designation p{
+		font-size: 22px;
+	}
+	.home-section .about .description p{
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	.home-section .hireme{
+		bottom: 10px;
+	}
+	.home-section .hireme .hireme-heading p{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	.home-section .hireme .hireme-items .hireme-item{
+		margin-bottom: 5px;
+	}
+
+	.experience .experience-heading p{
+		font-size: 22px;
+	}
+	.experience .experience-items .experience-item p{
+		font-size: 16px;
+	}
+
+	.teams{
+		margin-top: 0;
+		padding: 50px 0;
+		height: auto;
+	}
+	.teams .teams-heading p{
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.teams .teams-description p{
+		margin-bottom: 30px;
+	}
+	.teams .teams-list-items .teams-list-item:nth-child(2){
+		margin-bottom: 0;
+	}
+	.teams .teams-description p,
+	.teams .teams-list-items .teams-list-item p{
+		font-size: 16px;
+	}
+	.teams .teams-list-items .teams-list-item img{
+		width: 12px;
+		height: 12px;
+	}
+
+	.architecture .container .items .teams-list-items-2{
+		margin-left: 20px;
+	}
+	.architecture .container .items .teams-list-items-2 .teams-list-item{
+		font-size: 16px;
+		word-break: break-all;
+		padding-right: 20px;
+	}
+
+	.processes{
+		height: auto;
+		padding-bottom: 10px;
+	}
+	.processes .bg-img{
+		width: 45%;
+	}
+
+	.footer{
+		padding: 40px 0;
+	}
+	.footer .hireme{
+		width: 50%;
+	}
+	.footer .hireme .hireme-items {
+		justify-content: center;
+	}
+	.footer .hireme .hireme-items .hireme-item{
+		margin-bottom: 5px;
+	}
+	.footer .copyright{
+		width: 50%;
+	}
+
+}
+@media(min-width: 769px) and (max-width:  1024px){
+	.container{
+		width: 90%;
+	}
+	.home-section{
+		height: 560px;
+	}
+	.home-section .about{
+		display: block;
+		height: auto;
+		margin-top: 70px;
+	}
+	.home-section .about .name p{
+		font-size: 44px;
+	}
+	.home-section .about .designation p{
+		font-size: 28px;
+	}
+	.home-section .hireme{
+		width: 35%;
+	}
+	.home-section .hireme .hireme-heading p{
+		font-size: 28px;
+	}
+	.home-section .hireme .hireme-items .hireme-item img{
+		width: 20px;
+	}
+	.home-section .hireme .hireme-items .hireme-item a{
+		font-size: 14px;
+	}
+
+	.experience .experience-heading p,
+	.teams .teams-heading p{
+		font-size: 28px;
+	}
+
+	
+	.architecture .container .items .teams-list-items-2 .teams-list-item{
+		font-size: 16px;
+		word-break: break-all;
+		padding-right: 20px;
+	}
+
+	.processes{
+		height: 650px;
+	}
+
+	.footer{
+		padding: 40px 0;
+	}
+	.footer .hireme{
+		width: 50%;
+	}
+	
+}
+
+@media(min-width: 1290px){
+	.architecture{
+		height: 676px;
+	}
+	.processes{
+		height: 756px;
+	}
+}
